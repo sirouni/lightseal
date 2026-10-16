@@ -1,0 +1,61 @@
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4
+ * Hallmark · genre: editorial · macrostructure: Narrative Workflow
+ * tone: utilitarian-archival · theme: custom (vibe: "wax paper notary")
+ * paper oklch(95.4% 0.012 95) · accent oklch(38% 0.048 165) wax
+ * display: Newsreader · body: Public Sans
+ * axes: light / roman-serif / chromatic-other
+ * enrichment: E9 CSS wax seal · nav: N6 Newspaper masthead · footer: Ft2
+ * audience: people exchanging original sealed photos · use: understand + legal URLs
+ */
+
+:root {
+  --color-paper: oklch(95.4% 0.012 95);
+  --color-paper-2: oklch(92.8% 0.014 95);
+  --color-ink: oklch(22% 0.014 160);
+  --color-ink-muted: oklch(48% 0.016 160);
+  --color-wax: oklch(26% 0.032 165);
+  --color-accent: oklch(38% 0.048 165);
+  --color-brass: oklch(74% 0.078 85);
+  --color-oxblood: oklch(44% 0.12 25);
+  --color-rule: oklch(74% 0.078 85 / 0.38);
+  --color-focus: oklch(42% 0.08 165);
+  --color-button: oklch(28% 0.038 165);
+  --color-button-ink: oklch(96% 0.01 95);
+  --color-seal-fill: oklch(32% 0.05 165);
+
+  --font-display: "Newsreader", "Songti SC", "Noto Serif SC", ui-serif, Georgia, serif;
+  --font-body: "Public Sans", "PingFang SC", "Noto Sans SC", ui-sans-serif, sans-serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.333rem;
+  --text-2xl: 1.777rem;
+  --text-3xl: 2.369rem;
+  --text-display: clamp(2.25rem, 6vw, 3.75rem);
+  --text-display-s: clamp(1.75rem, 4.5vw, 2.75rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hair: 1px;
+  --radius: 0;
+  --measure: 62ch;
+  --page-gutter: clamp(1rem, 4vw, 1.5rem);
+  --page-max: 68rem;
+}
