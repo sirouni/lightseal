@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐私政策 — LightSeal</title><link rel="alternate" hreflang="en" href="https://sirouni.github.io/lightseal/privacy.html"><link rel="alternate" hreflang="zh-Hans" href="https://sirouni.github.io/lightseal/zh/privacy.html"><link rel="alternate" hreflang="x-default" href="https://sirouni.github.io/lightseal/privacy.html"><script src="../lang.js"></script>
+  <meta name="description" content="LightSeal 不上传照片，验文件在手机上完成。">
+  <link rel="icon" href="../favicon.png" type="image/png"><link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="canonical" href="https://sirouni.github.io/lightseal/zh/privacy.html">
+  <link rel="stylesheet" href="../marketing.css?v=5"><link rel="stylesheet" href="../legal.css?v=2">
+<link rel="stylesheet" href="../zh.css?v=2"></head>
+<body>
+<a class="skip" href="#main">跳到正文</a><header class="site-nav"><div class="nav-inner"><a class="brand" href="./" aria-label="LightSeal 首页"><img src="../assets/logo-mark.png" alt="" width="32" height="32">LightSeal</a><nav aria-label="主导航"><a href="index.html#how-it-works">使用方法</a><a class="nav-support" href="support.html">帮助</a><a class="nav-lang" href="../privacy.html" hreflang="en" lang="en" data-set-lang="en"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>EN</a><a class="nav-store" href="https://apps.apple.com/app/id6820887413"><img src="../assets/app-store-badge.svg" alt="在 App Store 下载" width="120" height="40"></a></nav></div></header>
+
+  <main id="main" class="legal"><article class="legal-doc" lang="zh-Hans">
+    <h1>隐私政策</h1>
+    <p class="date">生效日期：2026年10月15日 · LightSeal（iOS）</p>
+    <p>本政策说明拍摄、签发、验文件和购买相关的信息处理。</p>
+    <h2>我们不托管照片</h2>
+    <p>LightSeal <strong>不把照片或视频上传到我们的服务器</strong>。签发和验文件在手机上完成。本版本没有用来存你媒体文件的服务器。</p>
+    <p>验文件一直免费，也不经过我们。</p>
+    <h2>没有账号</h2>
+    <p>不注册。不出售个人数据。开关类偏好存在 UserDefaults，卸载后通常会删掉。免费签发次数记在钥匙串里，若开了 iCloud 钥匙串还可能随 Apple ID 同步，所以删掉 App 不会重置免费额度。购买状态跟你的 Apple ID 走。</p>
+    <h2>会离开本机的请求</h2>
+    <p>下列功能会向第三方发请求。对方通常能看到 IP 和常规 HTTP 元数据——这是上网的成本，不是我们把照片卖掉。</p>
+    <ul class="fact-list">
+      <li><strong>Apple App Attest</strong><span>签发时向 Apple 证明正版 App。照片本身不发给 Apple。</span></li>
+      <li><strong>App Store</strong><span>购买、恢复购买和订阅状态由 Apple 管理。付款信息不经过我们。</span></li>
+      <li><strong>地名<small>点按后才查询</small></strong><span>地图预览由 Apple 地图绘制。只有点按「显示地名」后才会查询地名，此时照片中的坐标会发给 Apple 地图做反向地理编码，照片本身不发送。</span></li>
+      <li><strong>可信时间<small>默认关，Pro</small></strong><span>打开后，快门前对随机 32 字节盖时间戳，签发后再对内容哈希盖时间戳。默认机构为 Sigstore 与 FreeTSA。<strong>只发送 32 字节哈希，不发送照片或视频。</strong>没网或机构无响应时，这次拍摄失败。</span></li>
+    </ul>
+    <h2>留在文件里的信息</h2>
+    <ul class="fact-list">
+      <li><strong>拍摄记录<small>始终写入</small></strong><span>设备时钟时间和开机以来的时长，以及相机参数：摄像头类型、厂商与型号；照片另含曝光时间、光圈、焦距、ISO 和闪光灯，录像另含设定的分辨率、帧率以及开始录制时的曝光与 ISO。</span></li>
+      <li><strong>定位<small>可关</small></strong><span>开启「写入定位」时，最近坐标写入照片 EXIF 或录像的 QuickTime 位置原子，并计入签名，同时记录精度、可用时的海拔、定位时间距拍摄多久、授权的是精确还是大致位置，以及 iOS 是否报告该定位来自模拟或外接配件。位置留在你发出的原文件里，我们不单独收集。关闭则不请求定位。</span></li>
+      <li><strong>镜头朝向与环境小图<small>Pro，可关</small></strong><span>写入签发文件作对照，不能证明未翻拍。朝向只在开启时读取运动传感器（俯仰、横滚与罗盘方向）。环境小图是低清超广角缩略图，随原文件走，不上我们的云。</span></li>
+      <li><strong>LiDAR 深度<small>可选，默认关</small></strong><span>在带 LiDAR 的 iPhone 上用后置摄像头拍照时，可写入一份粗略深度图（最多 48 × 36 个点，单位毫米）和相机标定数据。录像和前置摄像头不采集深度。</span></li>
+      <li><strong>网络连接状态<small>可选，默认关</small></strong><span>是否联网、使用的接口类型（Wi‑Fi、蜂窝、有线、其他），以及连接是否被标为高开销或受限。只被动读取 iOS 提供的状态，不发请求，不记录 IP 地址、网络名称或附近设备。</span></li>
+      <li><strong>可信时间凭据<small>Pro，可选</small></strong><span>开启可信时间时，时间戳机构签名的回执会存进文件。</span></li>
+      <li><strong>签发凭证</strong><span>含稳定 keyId，可关联同一安装签发的多份文件。</span></li>
+    </ul>
+    <p>以上内容都签进文件，你把原文件或信封发给谁，谁就能看到。不想分享可选项时，请在拍摄前关掉。</p>
+    <h2>系统权限</h2>
+    <p>相机、麦克风（为签发录像录制声音）、相册、定位只在需要时请求。关掉对应开关后，仍可不写入该项。定位开着却拿不到坐标时，这次拍摄会失败。朝向读取运动传感器，iOS 不为此弹出授权。</p>
+    <h2>分析与追踪</h2>
+    <p>本版本没有第三方广告或追踪 SDK，也不在其他 App 之间追踪你。隐私清单声明不追踪、不收集需披露的数据类型。</p>
+    <h2>儿童</h2>
+    <p>不以 13 岁以下儿童为对象。</p>
+    <h2>你的选择</h2>
+    <ul>
+      <li>可随时关闭定位、朝向、环境小图、LiDAR 深度、网络连接状态和可信时间。麦克风权限可在系统设置里收回，之后录像不带声音。</li>
+      <li>可在系统设置里管理或取消订阅。</li>
+      <li>可卸载 App。</li>
+    </ul>
+    <h2>联系</h2>
+    <p><a href="mailto:sirouni@gmail.com">sirouni@gmail.com</a> 或 <a href="support.html">支持</a>。</p>
+    <h2>变更</h2>
+    <p>我们可能更新本政策。重大变更会改生效日期，并尽可能在 App 或本页提示。继续使用即表示接受更新后的政策。</p>
+    
+  </article></main>
+
+<footer class="site-footer"><div class="footer-inner"><div><a class="brand" href="./">LightSeal</a><p>签下原件，验得明白。</p></div><nav aria-label="页脚"><a href="support.html">帮助</a><a href="privacy.html">隐私政策</a><a href="terms.html">使用条款</a><a href="mailto:sirouni@gmail.com">联系我们</a></nav><p class="copyright">© 2026 LightSeal</p></div></footer>
+</body>
+</html>

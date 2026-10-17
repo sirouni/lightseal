@@ -27,7 +27,7 @@
       question.hidden = !matches;
       if (matches) count++;
     });
-    document.querySelector('#faq-count').textContent = count + (count === 1 ? ' question' : ' questions');
+    document.querySelector('#faq-count').textContent = document.documentElement.lang.startsWith('zh') ? '共 ' + count + ' 个问题' : count + (count === 1 ? ' question' : ' questions');
     document.querySelector('.no-results').hidden = count !== 0;
     document.querySelector('#faq-reset').hidden = category === 'all' && query === '';
   };
