@@ -12,3 +12,8 @@ body{background:#fff}h1,h2,.scenarios h3{font-family:Georgia,"Times New Roman",s
 
 .native-details-scroll{max-height:680px;overflow-y:auto;overscroll-behavior:contain;border-radius:9px;background:#fcfcfb;scrollbar-width:thin;scrollbar-color:#557562 #eef3ef}.native-details-scroll:focus-visible{outline:2px solid #104f35;outline-offset:5px}.native-details-scroll>img{display:block;width:100%;max-width:390px;height:auto;margin:auto}.context-app-example figcaption a{color:#104f35;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:650px){.native-details-scroll{max-height:600px}}
+.campaign-phone .phone-screen{background:#000}
+.phone-shot,.device-shot{display:block;width:100%;height:auto}
+.scene-device{background:#000}
+.store-badge{display:inline-block;line-height:0}
+.store-badge img{display:block;height:54px;width:auto}
